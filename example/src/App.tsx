@@ -1,11 +1,13 @@
 import React from 'react';
-import SayHello from 'react-countingstar';
+import { Button } from "react-countingstar"
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-     <SayHello name="sunwoo" />
+      <Button>
+        asdf
+      </Button>
     </div>
   );
 }
