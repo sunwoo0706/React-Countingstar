@@ -1,11 +1,11 @@
 import React from 'react';
-import SayHello from 'typescript-react-test';
+import SayHello from 'react-countingstar';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-     <SayHello name="Prateek" />
+     <SayHello name="sunwoo" />
     </div>
   );
 }
