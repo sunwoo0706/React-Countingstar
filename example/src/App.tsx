@@ -1,14 +1,8 @@
-import React from 'react';
-import { Button } from "react-countingstar"
-import './App.css';
+import { Hello } from "react-countingstar";
 
 function App() {
   return (
-    <div className="App">
-      <Button>
-        asdf
-      </Button>
-    </div>
+    <Hello>asdf</Hello>
   );
 }
 
