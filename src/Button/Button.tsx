@@ -1,12 +1,17 @@
 import React from 'react';
-import { IButtonProps } from './Button.type';
+import { IHelloProps } from './Button.type';
+import st from "styled-components";
 
-function Button({ children }:IButtonProps):JSX.Element {
+const ApplySexyBoy = st.div`
+  color: red;
+`
+
+function Hello({ children }:IHelloProps) {
   return (
-    <small>
+    <ApplySexyBoy>
       {children}
-    </small>
+    </ApplySexyBoy>
   );
 }
 
-export default Button;
+export default Hello;
