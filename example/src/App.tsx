@@ -1,8 +1,8 @@
-import { Hello } from "react-countingstar";
+import { CountingStar } from "react-countingstar";
 
 function App() {
   return (
-    <Hello>asdf</Hello>
+    <CountingStar cntNum={37723} time={20} />
   );
 }
 
