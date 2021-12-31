@@ -1,1 +1,1 @@
-export { default as Hello } from './Button/Button';
+export { default as CountingStar } from './main';
