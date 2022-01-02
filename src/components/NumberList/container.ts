@@ -21,7 +21,7 @@ const NumberListSlide = keyframes`
         transform: translateY(0);
     }
     100% {
-        transform: translateY(-9rem);
+        transform: translateY(${-(9 * 100)}%);
     }
 `;
 
