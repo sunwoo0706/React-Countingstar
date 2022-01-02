@@ -1,3 +1,5 @@
+import { cssFontUnitType } from "./types";
+
 /**
  * return number array generated to number.
  * @param number A number what will generated to number[].
@@ -35,4 +37,13 @@ export const getNumLength = (number: number): number => {
  */
  export const getNumListNum = (idx: number, start: number): number => {
     return ((idx + 1) + start) % 10;
+};
+
+/**
+ * return font size customized by the lib user
+ * @param number
+ * @returns If the size is a number, add pixels as a suffix, otherwise return the user-customized size.
+ */
+ export const getFontSize = (fontSize: cssFontUnitType | number): string => {
+    return typeof fontSize === "number" ? fontSize + "px" : fontSize;
 };
