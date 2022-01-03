@@ -8,7 +8,6 @@
   "license": "MIT",
   "scripts": {
     "build": "rm -rf ./lib/ && tsc --emitDeclarationOnly && rollup -c",
-    "example": "cd example/ && yarn && yarn start",
     "prepublishOnly": "yarn build"
   },
   "peerDependencies": {
