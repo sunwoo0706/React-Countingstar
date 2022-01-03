@@ -7,10 +7,9 @@ export function NumberArr({ start }: NumberArrProps) {
     return (
         <>
             {[...Array(10)].map((_, idx) => (
-                <>
+                <li key={idx}>
                     {getNumListNum(idx, start)}
-                    <br />
-                </>
+                </li>
             ))}
         </>
     );
