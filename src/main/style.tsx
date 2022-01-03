@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { getFontSize } from 'src/Shared/utils';
+import { getFontSize } from '../Shared/utils';
 import { CountingStarWrapperProps } from './container';
 
 export const CountingStarWrapper = styled.span<CountingStarWrapperProps>`

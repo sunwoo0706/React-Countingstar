@@ -2,7 +2,7 @@ import { CountingStar } from "react-countingstar";
 
 function App() {
   return (
-    <CountingStar cntNum={37723} time={4} fontSize={16}/>
+    <CountingStar cntNum={20040706} time={4} fontSize={16}/>
   );
 }
 

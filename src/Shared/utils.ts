@@ -44,6 +44,6 @@ export const getNumListNum = (idx: number, start: number): number => {
  * @param number
  * @returns If the size is a number, add pixels as a suffix, otherwise return the user-customized size.
  */
-export const getFontSize = (fontSize: cssFontUnitType | number): string => {
-    return typeof fontSize === 'number' ? fontSize + 'px' : fontSize;
+export const getFontSize = (fontSize: cssFontUnitType | number): cssFontUnitType => {
+    return (typeof fontSize === 'number' ? fontSize + 'px' : fontSize) as cssFontUnitType;
 };
