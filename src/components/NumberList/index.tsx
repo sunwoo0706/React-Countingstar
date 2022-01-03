@@ -1,17 +1,13 @@
-import React from "react";
+import React from 'react';
 
-import { NumberListProps, NumberListWrapper } from "./container";
-import { getNumListNum } from "src/utils/utils";
+import { NumberArr } from 'src/Components/NumberArr'
+import { NumberListProps } from './container';
+import { NumberListWrapper } from './style';
 
 export function NumberList({ start, idx, time, length }: NumberListProps) {
     return (
         <NumberListWrapper idx={idx} time={time} length={length}>
-                {[...Array(10)].map((_, idx) => (
-                    <>
-                        {getNumListNum(idx, start)}
-                        <br />
-                    </>
-                ))}
+            <NumberArr start={start}/>
         </NumberListWrapper>
     );
 };

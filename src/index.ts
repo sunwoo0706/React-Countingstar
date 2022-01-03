@@ -1,1 +1,1 @@
-export { default as CountingStar } from './main';
+export { default as CountingStar } from './Main';

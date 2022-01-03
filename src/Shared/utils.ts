@@ -1,4 +1,4 @@
-import { cssFontUnitType } from "./types";
+import { cssFontUnitType } from './types';
 
 /**
  * return number array generated to number.
@@ -25,7 +25,7 @@ export const getNumLength = (number: number): number => {
  * @param length A count number length.
  * @returns A number to use as each number list css animation duration.
  */
- export const getDuration = (idx: number, time: number, length: number): string => {
+export const getDuration = (idx: number, time: number, length: number): string => {
     return ((idx + 1) * (time / length)) + 's';
 };
 
@@ -35,7 +35,7 @@ export const getNumLength = (number: number): number => {
  * @param start A starting number of the number list.
  * @returns A number to use as css animation duration.
  */
- export const getNumListNum = (idx: number, start: number): number => {
+export const getNumListNum = (idx: number, start: number): number => {
     return ((idx + 1) + start) % 10;
 };
 
@@ -44,6 +44,6 @@ export const getNumLength = (number: number): number => {
  * @param number
  * @returns If the size is a number, add pixels as a suffix, otherwise return the user-customized size.
  */
- export const getFontSize = (fontSize: cssFontUnitType | number): string => {
-    return typeof fontSize === "number" ? fontSize + "px" : fontSize;
+export const getFontSize = (fontSize: cssFontUnitType | number): string => {
+    return typeof fontSize === 'number' ? fontSize + 'px' : fontSize;
 };

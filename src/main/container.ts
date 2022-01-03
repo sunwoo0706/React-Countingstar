@@ -1,7 +1,6 @@
-import styled from "styled-components";
+import React from 'react';
 
-import { cssFontUnitType } from "src/utils/types"
-import { getFontSize } from "src/utils/utils";
+import { cssFontUnitType } from 'src/Shared/types';
 
 export interface CountingStarProps {
   cntNum: number;
@@ -12,11 +11,3 @@ export interface CountingStarProps {
 export interface CountingStarWrapperProps {
   fontSize: cssFontUnitType | number;
 }
-
-export const CountingStarWrapper = styled.span<CountingStarWrapperProps>`
-  display: inline-flex;
-  width: fit-content;
-  height: ${({fontSize}) => getFontSize(fontSize)};
-  font-size: ${({fontSize}) => getFontSize(fontSize)};
-  overflow: hidden;
-`;
