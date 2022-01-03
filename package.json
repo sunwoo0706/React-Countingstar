@@ -1,13 +1,13 @@
 {
   "name": "react-countingstar",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "a component for count animation",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "types": "./lib/types/index.d.ts",
   "license": "MIT",
   "scripts": {
-    "build": "rm -rf ./lib/ && tsc --emitDeclarationOnly && rollup -c && yarn example",
+    "build": "rm -rf ./lib/ && tsc --emitDeclarationOnly && rollup -c",
     "example": "cd example/ && yarn && yarn start",
     "prepublishOnly": "yarn build"
   },
