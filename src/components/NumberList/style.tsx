@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 
-import { getDuration } from 'src/Shared/utils';
+import { getDuration } from '../../Shared/utils';
 import { NumberListWrapperProps } from './container';
 
 const NumberListSlide = keyframes`
