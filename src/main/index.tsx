@@ -3,7 +3,7 @@ import { Reset } from 'styled-reset';
 
 import { CountingStarProps } from './container';
 import { CountingStarWrapper } from './style';
-import { NumberListArr } from 'src/Components/NumberListArr';
+import { NumberListArr } from '../Components/NumberListArr';
 
 function CountingStar({ cntNum, time, fontSize }: CountingStarProps) {
   return (

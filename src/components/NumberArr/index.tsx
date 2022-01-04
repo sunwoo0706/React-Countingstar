@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { NumberArrProps } from './container';
-import { getNumListNum } from 'src/Shared/utils';
+import { getNumListNum } from '../../Shared/utils';
 
 export function NumberArr({ start }: NumberArrProps) {
     return (

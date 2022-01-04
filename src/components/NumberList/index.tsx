@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { NumberArr } from 'src/Components/NumberArr'
+import { NumberArr } from '../../Components/NumberArr'
 import { NumberListProps } from './container';
 import { NumberListWrapper } from './style';
 

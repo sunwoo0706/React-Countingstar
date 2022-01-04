@@ -1,8 +1,8 @@
 import React from 'react';
 
 import { NumberListArrProps } from './container';
-import { NumberList } from 'src/Components/NumberList';
-import { getNumToNumArr, getNumLength } from 'src/Shared/utils';
+import { NumberList } from '../../Components/NumberList';
+import { getNumToNumArr, getNumLength } from '../../Shared/utils';
 
 export function NumberListArr({ cntNum, time }: NumberListArrProps) {
   const cntNumArr: Array<number> = getNumToNumArr(cntNum);

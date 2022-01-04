@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 
-import { getDuration } from 'src/Shared/utils';
+import { getDuration } from '../../Shared/utils';
 import { NumberListWrapperProps } from './container';
 
 const NumberListSlide = keyframes`
@@ -15,6 +15,6 @@ const NumberListSlide = keyframes`
 export const NumberListWrapper = styled.ul<NumberListWrapperProps>`
     width: fit-content;
     text-align: center;
-    animation: ${NumberListSlide} ease forwards;
+    animation: ${NumberListSlide} linear forwards;
     animation-duration: ${({idx, time, length}) => getDuration(idx, time, length)};
 `;
