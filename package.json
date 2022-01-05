@@ -1,7 +1,7 @@
 {
   "name": "react-countingstar",
-  "version": "0.1.0",
-  "description": "a component for count animation",
+  "version": "0.2.0",
+  "description": "a component for slot count animation",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "types": "./lib/types/index.d.ts",
