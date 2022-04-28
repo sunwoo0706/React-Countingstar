@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "declaration": true, //빌드할때 자동으로 d.type file을 만들거야!
     "declarationDir": "lib/types", //d.type file이 만들어졌다면 lib/type 폴더에 넣어줘
     "allowJs": true,
@@ -23,6 +19,6 @@
     "jsx": "react",
     "baseUrl": "./"
   },
-  "include": ["src"],
+  "include": ["src/**/*.tsx", "src/**/*.ts"],
   "exclude": ["node_modules", "lib"]
 }

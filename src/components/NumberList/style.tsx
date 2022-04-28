@@ -1,7 +1,7 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes } from "styled-components";
 
-import { getDuration } from '../../Shared/utils';
-import { NumberListWrapperProps } from './container';
+import { getDuration } from "../../shared/utils";
+import { NumberListWrapperProps } from "./container";
 
 const NumberListSlide = keyframes`
     0% {
@@ -13,8 +13,9 @@ const NumberListSlide = keyframes`
 `;
 
 export const NumberListWrapper = styled.ul<NumberListWrapperProps>`
-    width: fit-content;
-    text-align: center;
-    animation: ${NumberListSlide} linear forwards;
-    animation-duration: ${({idx, time, length}) => getDuration(idx, time, length)};
+  width: fit-content;
+  text-align: center;
+  animation: ${NumberListSlide} linear forwards;
+  animation-duration: ${({ idx, time, length }) =>
+    getDuration(idx, time, length)};
 `;

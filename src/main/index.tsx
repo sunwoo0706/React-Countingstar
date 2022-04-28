@@ -1,9 +1,18 @@
-import React from 'react';
-import { Reset } from 'styled-reset';
+import React from "react";
+import { Reset } from "styled-reset";
+import styled from "styled-components";
 
-import { CountingStarProps } from './container';
-import { CountingStarWrapper } from './style';
-import { NumberListArr } from '../Components/NumberListArr';
+import { CountingStarProps, CountingStarWrapperProps } from "../main/container";
+import { NumberListArr } from "../components/NumberListArr";
+import { getFontSize } from "../shared/utils";
+
+export const CountingStarWrapper = styled.span<CountingStarWrapperProps>`
+  display: inline-flex;
+  width: fit-content;
+  height: ${({ fontSize }) => getFontSize(fontSize)};
+  font-size: ${({ fontSize }) => getFontSize(fontSize)};
+  overflow: hidden;
+`;
 
 function CountingStar({ cntNum, time, fontSize }: CountingStarProps) {
   return (
@@ -14,6 +23,6 @@ function CountingStar({ cntNum, time, fontSize }: CountingStarProps) {
       </CountingStarWrapper>
     </>
   );
-};
+}
 
 export default CountingStar;
