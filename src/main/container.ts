@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { cssFontUnitType } from '../shared/types';
+import { cssFontUnitType } from '../share/types';
 
 export interface CountingStarProps {
   /** A number to count */

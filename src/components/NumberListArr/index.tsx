@@ -2,7 +2,7 @@ import React from "react";
 
 import { NumberListArrProps } from "./container";
 import { NumberList } from "../../components/NumberList";
-import { getNumToNumArr, getNumLength } from "../../shared/utils";
+import { getNumToNumArr, getNumLength } from "../../share/utils";
 
 export function NumberListArr({ cntNum, time }: NumberListArrProps) {
   const cntNumArr: Array<number> = getNumToNumArr(cntNum);

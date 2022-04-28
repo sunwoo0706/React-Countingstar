@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 import { CountingStarProps, CountingStarWrapperProps } from "../main/container";
 import { NumberListArr } from "../components/NumberListArr";
-import { getFontSize } from "../shared/utils";
+import { getFontSize } from "../share/utils";
 
 export const CountingStarWrapper = styled.span<CountingStarWrapperProps>`
   display: inline-flex;
